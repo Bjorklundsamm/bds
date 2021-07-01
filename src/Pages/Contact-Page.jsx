@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Row, Col, Form } from 'react-bootstrap';
+import emailjs from 'emailjs-com';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import Styled from 'styled-components';
@@ -227,6 +228,18 @@ $('form').fadeOut(500);
 
 class Contact extends Component {
 
+  sendEmail(e) {
+    e.preventDefault();
+
+    emailjs.sendForm('service_e8rddlt', 'template_mng2o5j', e.target, 'user_EK74GZLAzBgtbs1YDi73g')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+    e.target.reset();
+  }
+
   render() {
     return (
       <motion.div
@@ -261,6 +274,8 @@ class Contact extends Component {
                 <Form.Row>
                   <input
                     type="text"
+                    name="name"
+                    required
                     placeholder="Name"
                     className="form-input"
                   />
@@ -268,6 +283,7 @@ class Contact extends Component {
                 <Form.Row>
                   <input
                     type="text"
+                    name="phone"
                     placeholder="Phone"
                     className="form-input"
                   />
@@ -275,6 +291,7 @@ class Contact extends Component {
                 <Form.Row>
                   <input
                     type="email"
+                    name="email"
                     placeholder="Email(*)"
                     required
                     className="form-input"
@@ -306,9 +323,7 @@ class Contact extends Component {
                         to="/"
                       >
                         <button
-                          type="submit"
                           id="login-button"
-                          onClick={this.sendEmail}
                         >
                           Back to Home Page
                         </button>

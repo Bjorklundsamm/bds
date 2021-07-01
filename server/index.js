@@ -10,6 +10,11 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 app.use(express.json());
 
+// Routes
+app.use('/about', express.static(path.join(__dirname, '..', 'build')));
+app.use('/contact', express.static(path.join(__dirname, '..', 'build')));
+app.use('/hiring', express.static(path.join(__dirname, '..', 'build')));
+
 app.listen(PORT, () => {
   console.log(`Listening on ${PORT}`);
 });
