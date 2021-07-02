@@ -69,7 +69,14 @@ const Styles = Styled.div`
     background-size: 640px 360px;
     width: 640px;
     height: 360px;
+  }
 
+  #hearth {
+    background: url("https://bjorklund-design-services.s3.us-west-2.amazonaws.com/hearth.gif")
+      no-repeat center;
+    background-size: 640px 360px;
+    width: 640px;
+    height: 360px;
   }
 
   #cat {
@@ -78,7 +85,6 @@ const Styles = Styled.div`
     background-size: 640px 360px;
     width: 640px;
     height: 360px;
-
   }
 
   .title {
@@ -191,6 +197,15 @@ class Home extends Component {
                       className="title"
                     >
                       Stewart-Audio
+                    </button>
+                  </Carousel.Item>
+                  <Carousel.Item
+                    id="hearth"
+                  >
+                    <button
+                      className="title"
+                    >
+                      EarthSpiritHearth
                     </button>
                   </Carousel.Item>
                   <Carousel.Item
