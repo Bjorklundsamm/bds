@@ -1,0 +1,46 @@
+[
+    {
+        "id": "entry_001",
+        "name": "Bby · Bloom",
+        "site": "https://bbybloom.co",
+        "image": "https://bjorklund-design-services.s3.us-west-2.amazonaws.com/Bby+Bloom.gif"
+    },
+    {
+        "id": "entry_002",
+        "name": "Sara Maria Flamenco",
+        "site": "https://saramariaflamenco.com",
+        "image": "https://bjorklund-design-services.s3.us-west-2.amazonaws.com/smf.gif"
+    },
+    {
+        "id": "entry_003",
+        "name": "Stewart Audio",
+        "site": "https://stewart-audio.com",
+        "image": "https://bjorklund-design-services.s3.us-west-2.amazonaws.com/Stewart-Audio.gif",
+        "status": "down"
+    },
+    {
+        "id": "entry_004",
+        "name": "Earth Spirit Hearth",
+        "site": "https://earthspirithearth.com",
+        "image": "https://bjorklund-design-services.s3.us-west-2.amazonaws.com/hearth.gif"
+    },
+    {
+        "id": "entry_005",
+        "name": "Earth Spirit Path",
+        "site": "https://earthspiritpath.org",
+        "image": "https://bjorklund-design-services.s3.us-west-2.amazonaws.com/esp.gif"
+    },
+    {
+        "id": "entry_006",
+        "name": "Julia J. Parranto Law Offices",
+        "site": "https://parrantolaw.com",
+        "image": "https://bjorklund-design-services.s3.us-west-2.amazonaws.com/jjp.gif"
+    },
+    {
+        "id": "entry_007",
+        "name": "College Advising Team",
+        "site": "https://collegeadvisingteam.com",
+        "image": "https://bjorklund-design-services.s3.us-west-2.amazonaws.com/cat.png",
+        "status": "down"
+    }
+]

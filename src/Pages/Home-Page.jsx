@@ -5,6 +5,8 @@ import { motion } from 'framer-motion';
 import Styled from 'styled-components';
 import $ from 'jquery';
 
+import projects from '../lib/projects.json';
+
 
 const Styles = Styled.div`
   #homepage {
@@ -53,38 +55,6 @@ const Styles = Styled.div`
 
   #carousel {
     display: none;
-  }
-
-  #bbybloom {
-    background: url("https://bjorklund-design-services.s3.us-west-2.amazonaws.com/Bby+Bloom.gif")
-      no-repeat center;
-    background-size: 640px 360px;
-    width: 640px;
-    height: 360px;
-  }
-
-  #stewartaudio {
-    background: url("https://bjorklund-design-services.s3.us-west-2.amazonaws.com/Stewart-Audio.gif")
-      no-repeat center;
-    background-size: 640px 360px;
-    width: 640px;
-    height: 360px;
-  }
-
-  #hearth {
-    background: url("https://bjorklund-design-services.s3.us-west-2.amazonaws.com/hearth.gif")
-      no-repeat center;
-    background-size: 640px 360px;
-    width: 640px;
-    height: 360px;
-  }
-
-  #cat {
-    background: url("https://bjorklund-design-services.s3.us-west-2.amazonaws.com/cat.png")
-      no-repeat center;
-    background-size: 640px 360px;
-    width: 640px;
-    height: 360px;
   }
 
   .title {
@@ -171,61 +141,38 @@ class Home extends Component {
                   fade={true}
                   slide={false}
                   interval={15000}
-                >
-                  <Carousel.Item
-                    id="bbybloom"
-                  >
-                    <button
-                      className="title"
-                    >
-                      Bby · Bloom
-                    </button>
-                  </Carousel.Item>
-                  <Carousel.Item
-                    id="stewartaudio"
-                  >
-                    <div
-                      className="overlay"
-                    >
-                      <h1
-                        className="header non-text"
+                > 
+                  {projects.map((entry) => {
+                    return (
+                      <Carousel.Item
+                        key={entry.id}
                       >
-                        under construction
-                      </h1>
-                    </div>
-                    <button
-                      className="title"
-                    >
-                      Stewart-Audio
-                    </button>
-                  </Carousel.Item>
-                  <Carousel.Item
-                    id="hearth"
-                  >
-                    <button
-                      className="title"
-                    >
-                      EarthSpiritHearth
-                    </button>
-                  </Carousel.Item>
-                  <Carousel.Item
-                    id="cat"
-                  >
-                    <div
-                      className="overlay"
-                    >
-                      <h1
-                        className="header  non-text"
-                      >
-                        under construction
-                      </h1>
-                    </div>
-                    <button
-                      className="title"
-                    >
-                      College Advising Team
-                    </button>
-                  </Carousel.Item>
+                                                <button
+                          className="title"
+                        >
+                          {entry.name}
+                        </button>
+                        <img
+                          src={entry.image}
+                          width="640px"
+                          height="360px"
+                          alt={entry.name}
+                        />
+                        {entry.status === 'down' &&
+                          <div
+                            className="overlay"
+                          >
+                            <h1
+                              className="header non-text"
+                            >
+                              under construction
+                            </h1>
+                          </div>
+                        }
+
+                      </Carousel.Item>
+                    )
+                  })}
                 </Carousel>
                 </Row>
                 </Col>
