@@ -33,7 +33,7 @@ const Story = () => (
         <Row
             className="body-row justify-content-center text"
         >
-        <p>These are my ambitions</p>
+        <p>Following my graduation from Hack Reactor's software engineering immersive I have spent months in rehearsing and applying my skills as a web-developer. Working for privately contracted clients on everything from RESTful web applications to office productivity clients. Moving forward I am looking looking to join a talented team of developers on a project that I truly feel passionate about that will allow me to challenge myself and act as a critical team member or leader. In the long-term of my ambitions I would like to translate my skills into a career in security development and eventually pursue an AWS Solutions Architect certification.</p>
         </Row>
     </Col>
   </>

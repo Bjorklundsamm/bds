@@ -1,0 +1,57 @@
+{
+    "frontEnd": [
+        "JS(ES5 & ES6)",
+        "Bootstrap",
+        "React",
+        "Angular",
+        "Html5",
+        "SASS",
+        "CSS",
+        "Swift",
+        "Spring",
+        "EmailJS",
+        "TransitionGroups",
+        "jQuery",
+        "Pagination"
+    ],
+    "backEnd": [
+        "NodeJS",
+        "Python",
+        "PHP",
+        "C#",
+        "RESTful API Development",
+        "Elasticache",
+        "CassandraDB",
+        "MongoDB",
+        "MySQL",
+        "VPC",
+        "Axios",
+        "Mongoose",
+        "OAuth",
+        "Spring",
+        "SLF4j",
+        "Apache",
+        "Google Protocol Buffer"
+    ],
+    "devOps": [
+        "Github",
+        "Docker",
+        "AWS",
+        "Chrome-dev",
+        "Babel",
+        "Jest",
+        "Jenkins"
+    ],
+    "envs": [
+        "bash",
+        "Git",
+        "npm",
+        "yarn",
+        "Cisco CLI",
+        "WSL2",
+        "Ubuntu",
+        "Arch-Linux",
+        "CentOS",
+        "MacOS",
+        "Windows 7,10/Server 2016-2019"
+    ]
