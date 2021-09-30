@@ -18,17 +18,12 @@ const Styles = styled.div`
     width: 100%;
     height: 100%;
     padding: 100px 10px 100px 0px;
-    background: url("https://bjorklund-design-services.s3.us-west-2.amazonaws.com/background-ab.jpg")
-      no-repeat fixed center 100%;
   }
 
   #abt-container {
     height: 100%;
     display: flex;
     align-items: center;
-  }
-
-  #btns-container {
   }
 
   #section-container {
@@ -87,6 +82,32 @@ const Styles = styled.div`
   .text {
     color: rgba(255,255,255,1);
   }
+
+  .show-border {
+    border: solid 2px white;
+  }
+
+  .bg {
+    animation:slide 8s ease-in-out infinite alternate;
+    background-image: linear-gradient(60deg, #000000 50%, #161616 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+  }
+
+  .bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:8s;
+  }
+
+  .bg3 {
+    animation-duration:10s;
+  }
+
 `
 
 class About extends Component {
@@ -132,6 +153,9 @@ class About extends Component {
         transition={{duration: 0.5}}
       >
       <Styles>
+          <div className="bg"></div>
+          <div className="bg bg2"></div>
+          <div className="bg bg3"></div>
         <Container
           id="about-page"
           fluid="true"

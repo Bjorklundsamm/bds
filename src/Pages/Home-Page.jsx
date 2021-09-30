@@ -196,7 +196,7 @@ class Home extends Component {
               id="right-btn"
               className="page-btn"
             >
-              Resume
+              About Me
             </Button>
           </Link>
           <Link

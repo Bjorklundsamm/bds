@@ -1,5 +1,4 @@
 import React from 'react';
-import { Row } from 'react-bootstrap';
 
 const Resume = () => (
   <>
@@ -9,7 +8,7 @@ const Resume = () => (
         height= "100%"
         width= "100%"
         frameBorder="0"
-        src={`https://bjorklund-design-services.s3.us-west-2.amazonaws.com/SamB+-+Resume.pdf`}
+        src={`https://docs.google.com/document/d/1hg5BtUh9BayqWV7w3byENgyeaNpgwrbn/edit?usp=sharing&ouid=110028743607996276654&rtpof=true&sd=true`}
       >
       </iframe>
   </>
