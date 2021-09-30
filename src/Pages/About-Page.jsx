@@ -89,7 +89,7 @@ const Styles = styled.div`
 
   .bg {
     animation:slide 8s ease-in-out infinite alternate;
-    background-image: linear-gradient(60deg, #000000 50%, #161616 50%);
+    background-image: linear-gradient(-120deg, #000000 50%, #161616 50%);
     bottom:0;
     left:-50%;
     opacity:.5;
@@ -161,14 +161,14 @@ class About extends Component {
         transition={{duration: 0.5}}
       >
       <Styles>
-          <div className="bg"></div>
-          <div className="bg bg2"></div>
-          <div className="bg bg3"></div>
         <Container
           id="about-page"
           fluid="true"
           className="page"
         >
+          <div className="bg"></div>
+          <div className="bg bg2"></div>
+          <div className="bg bg3"></div>
           <Row
             id="abt-container"
           >
