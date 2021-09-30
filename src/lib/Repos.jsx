@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import axios from 'axios';
 import { Octokit } from 'octokit';
-import { Link } from 'react-router-dom';
 
 
 
@@ -52,7 +50,6 @@ class Repos extends Component {
             .then(({data}) => {
                 for(var i = 0; i < data.length; i++) {
                     problems.push({'name': data[i].name, 'url': data[i].html_url})
-                    console.log(data[i])
                 }
             })
             .then(() => {
