@@ -108,6 +108,14 @@ const Styles = styled.div`
     animation-duration:10s;
   }
 
+  @keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  }
 `
 
 class About extends Component {
